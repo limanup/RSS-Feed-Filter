@@ -1,0 +1,36 @@
+// blank lines and any lines that begins with '//' are ignored
+// 
+
+// title trigger named t1
+t1,TITLE,Brooklyn
+
+// description trigger named t2
+t2,DESCRIPTION,gunman
+
+// description trigger named t3
+t3,DESCRIPTION,attack
+
+// after trigger named t4
+t4,AFTER,1 Apr 2022 07:00:00
+
+// composite trigger named t4
+t5,AND,t2,t3
+
+// composite trigger named t4
+t6,AND,t1,t4
+
+// the trigger list contains t1 and t4
+ADD,t5,t6
+
+t7,TITLE,Bank of Canada
+t8,DESCRIPTION,Bank of Canada
+t9,OR,t7,t8
+t70,TITLE,inflation
+t91,OR,t9,t70
+ADD,t91
+
+t10,TITLE,Russia
+t11,TITLE,Ukraine
+t12,NOT,t11
+t13,AND,t10,t12
+ADD,t13
