@@ -1,5 +1,5 @@
 # RSS-Feed-Filter
- Google News RSS Feed Filter - MIT 60001 ps5
+ Google News RSS Feed Filter
 
 This Google News RSS Feed Filter connects to the website's RSS feed, filters for news items per user's preference (set in triggers.txt), automatically polls the news on a timer (default 2 minutes).
 
